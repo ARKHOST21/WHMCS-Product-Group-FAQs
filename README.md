@@ -12,13 +12,11 @@ The WHMCS Product Group FAQs Module is a powerful addition to your WHMCS system,
 
 - **Admin Panel Management**: All FAQs and answers can be added, modified, or deleted per language via the intuitive admin panel of the module.
 
-- **Customization**: Tailor FAQs to match your brand and style, enhancing the overall look and feel of your WHMCS system.
-
 - **User-Friendly Interface**: The module is designed with both administrators and customers in mind, offering a seamless and efficient experience for all users.
 
 ## Installation
 
-1. **Clone the Repository**: Clone this repository to your WHMCS installation directory.
+1. **Extract Files**: Extract *includes/* and *hooks/* to your WHMCS directory.
 
 2. **Module Configuration**: Enable the module within WHMCS and provide the admin URL part for integration.
 
