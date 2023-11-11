@@ -24,6 +24,20 @@ The WHMCS Product Group FAQs Module is a powerful addition to your WHMCS system,
 
 3. **FAQ Management**: Start managing your FAQs through the admin panel, organizing them by product group and language.
 
+## Integration Instructions
+To integrate this feature into your WHMCS system, follow these steps:
+
+1. Place the PHP scripts in the appropriate directory of your WHMCS installation.
+2. Modify the `templates/orderforms/your_order_form/products.tpl` file in your WHMCS template by adding the following code at the end of the file:
+   ```
+   <!-- BEGIN: FAQ Block-->
+   <div class="faq-container" data-group-id="{$gid}" data-language="{if isset($_SESSION['Language'])}{$_SESSION['Language']}{else}english{/if}">
+       <h1 class="main-heading">{$LANG.orderForm.ProductFaqs}</h1>
+       <div id="faq-list"></div>
+   </div>
+   <script src="/modules/addons/product_faqs/templates/js/faq.js"></script>
+   ```
+
 ## Support
 
 If you find this module valuable and would like to support its development, consider buying me a coffee. Your support helps maintain and improve this open-source project.
